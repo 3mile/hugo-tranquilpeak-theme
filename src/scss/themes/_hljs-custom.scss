@@ -8,44 +8,145 @@
 // 5. Remove `hljs-` of all CSS class name. E.g : `.hljs-comment` becomes `.comment`
 // 6. Comment line 61 (`'themes/tranquilpeak',`) of `source/_css/tranquilpeak.scss` file
 // 7. Run `grunt buildProd` to build the theme and see the result
-/*
 // Default code block
+
+// Highlight.js自定义主题
+//遵循指南
+// 1.取消注释下面的块 - 删除`/ *`和`* /`
+// 2.填充`background，`color`，`border-right-color`属性
+//具有主题的`.hljs` CSS类属性
+// 3.将您的主题放在下方所示的位置
+// 4.删除`.hljs {...}`规则
+// 5.删除所有CSS类名的`hljs -`。 例如：`.hljs-comment`变为`.comment`
+// 6.注释`source / _css / tranquilpeak.scss`文件的第61行（`'themes / tranquilpeak'，`）
+// 7.运行`grunt buildProd`来构建主题并查看结果
+//默认代码块
+/*
 pre > code {
-    background: ;
-    color: ;
+    background: #002b36;
+    color: #839496;
 }
 
 // Default inline code
 code {
-    background-color: ;
+    background-color: #002b36;
 }
+*/
+// allow for horizontal scrolling of code blocks
+pre > code.codeblock {
+  overflow-x: auto;
+}
+
+pre > code {
+  background: #f7f8f8;
+  color: #aaa;
+}
+
+// Default inline code
+code {
+  //background-color: #e3f2fd;
+  background-color: #e5e5e5;
+  border: 1px solid #73cf45;
+  line-height: 24px;
+  font-weight: bolder;
+  margin-left: 2px;
+  margin-right: 2px;
+  color: #000014ed;
+	// box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  // color: #FF00DC
+}
+
 
 // Tabbed code block tab
 // If your theme is dark then use a lighter background
 // to see clearly which tab is active
 .codeblock--tabbed figcaption .tab.active {
-    background: ;
-    color: ;
+    background: #002b36;
+    color: #839496;
 }
 
 // highlight code block
 figure.highlight,
 .codeblock {
-    background: ;
-    color: ;
+    background: #002b36;
+    color: #839496;
 
     figcaption {
-        background: ;
-        color: ;
+        background: #002b36;
+        color: #839496;
     }
     .gutter {
-        background: ;
-        border-right-color: ;
+        background: #002b36;
+        border-right-color: #f7f8f8;
         .line {
-            color: ;
+            color: #839496;
         }
     }
     // PUT YOUR THEME HERE
+      /* Solarized Green */
+  .keyword,
+  .selector-tag,
+  .addition {
+    color: #859900;
+  }
+  
+  /* Solarized Cyan */
+  .number,
+  .string,
+  .meta .meta-string,
+  .literal,
+  .doctag,
+  .regexp {
+    color: #2aa198;
+  }
+  
+  /* Solarized Blue */
+  .title,
+  .section,
+  .name,
+  .selector-id,
+  .selector-class {
+    color: #268bd2;
+  }
+  
+  /* Solarized Yellow */
+  .attribute,
+  .attr,
+  .variable,
+  .template-variable,
+  .class .title,
+  .type {
+    color: #b58900;
+  }
+  
+  /* Solarized Orange */
+  .symbol,
+  .bullet,
+  .subst,
+  .meta,
+  .meta .keyword,
+  .selector-attr,
+  .selector-pseudo,
+  .link {
+    color: #cb4b16;
+  }
+  
+  /* Solarized Red */
+  .built_in,
+  .deletion {
+    color: #dc322f;
+  }
+  
+  .formula {
+    background: #073642;
+  }
+  
+  .emphasis {
+    font-style: italic;
+  }
+  
+  .strong {
+    font-weight: bold;
+  }
 
 }
-*/

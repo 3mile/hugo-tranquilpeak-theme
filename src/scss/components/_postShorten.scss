@@ -28,6 +28,11 @@
                 text-decoration: none;
             }
         }
+        
+        h1.postShorten-title:hover {
+            background-color: #349ef3;
+            color: white;
+        }
     }
     // postShorten meta contains post's date, post's categories and tags
     .postShorten-meta {
@@ -128,6 +133,12 @@
         .postShorten-wrap {
             float: right;
             width: calc(100% - #{$post-thumbnail-image-width} - 20px);
+        }
+
+        .postShorten-wrap:hover {
+            box-shadow: 0 1px 6px 0 rgba(0,0,0, .2);
+            border-color: #eee;
+            transition: all .2s ease-in-out;
         }
     }
     .postShorten.postShorten--thumbnailimg-top {

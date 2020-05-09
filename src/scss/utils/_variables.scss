@@ -4,7 +4,10 @@
 // Font families
 $open-sans:            'Open Sans';
 $open-sans-sans-serif: 'Open Sans', sans-serif;
-$merriweather-serif:   'Merriweather', serif;
+//$open-sans:            'webfont';
+//$open-sans-sans-serif: 'webfont', sans-serif;
+// $merriweather-serif:   'Merriweather', serif;
+$merriweather-serif:    'JetBrainsMono-Medium', serif;
 $menlo:                 Menlo, Consolas, monospace;
 
 $font-family-base: $open-sans-sans-serif;
@@ -156,7 +159,7 @@ $sidebar: (
 // Main
 $main: (
     'padding-top':      15px,
-    'background-color': #fff
+    'background-color': #F5FFFA
 );
 
 // Components settings

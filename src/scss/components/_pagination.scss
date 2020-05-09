@@ -12,15 +12,20 @@
         padding:     0 10px;
         width:       auto;
 
-        .pagination-prev,
-        .pagination-next {
+        .pagination-prev {
             float:        left;
             margin-right: 10px;
         }
         .pagination-number {
-            float:     right;
+            float:     none;
             font-size: map-get($font-size, small);
             color:     map-get($colors, light);
+            text-align:center;
+        }
+        .pagination-next {
+            float:        right;
+            margin-right: 10px;
         }
     }
+
 }
