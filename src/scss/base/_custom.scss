@@ -12,3 +12,43 @@ pre.code-highlight > code {
 	margin: 0;
 	line-height: inherit;
 }
+
+.post-toc{
+    position: fixed; 
+    right:25px;
+    max-width:250px;
+    overflow:auto;
+    top: 200px;
+    bottom:50px;
+    z-index:9999;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    text-decoration:none;
+    // background: #eeeeee;
+    // white-space:nowrap;
+    a:hover {
+      background: bisque;
+      text-decoration:none;
+    }
+}
+.toc-wrapper {
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-thumb {
+      height: 40px;
+      background-color: #eee;
+      border-radius: 16px;
+      &:hover {
+        background-color: #ddd;
+      }
+    }
+}
+
+@media only screen and (max-width: 1224px) {
+    .post-toc {
+        display: none;
+    }
+} 

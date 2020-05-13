@@ -8,6 +8,10 @@
     }
 }
 
+article.postShorten.postShorten--thumbnailimg-left:hover {
+    box-shadow: 0 1px 6px 0 #607D8B;
+}
+
 // Post
 .postShorten {
     position:       relative;
@@ -135,11 +139,11 @@
             width: calc(100% - #{$post-thumbnail-image-width} - 20px);
         }
 
-        .postShorten-wrap:hover {
-            box-shadow: 0 1px 6px 0 rgba(0,0,0, .2);
-            border-color: #eee;
-            transition: all .2s ease-in-out;
-        }
+        // .postShorten-wrap:hover {
+        //     box-shadow: 0 1px 6px 0 rgba(0,0,0, .2);
+        //     border-color: #eee;
+        //     transition: all .2s ease-in-out;
+        // }
     }
     .postShorten.postShorten--thumbnailimg-top {
         .postShorten-thumbnailimg {

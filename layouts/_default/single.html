@@ -17,9 +17,13 @@
         {{ end }}
         <div class="post-content markdown" itemprop="articleBody">
           <div class="main-content-wrap">
-            {{ (replaceRE "<!--\\s*[t|T][o|O][c|C]\\s*-->" (printf "<h1 id=\"table-of-contents\">%s</h1>%s" (i18n "post.toc") .TableOfContents) .Content) | safeHTML }}
+            {{ partial "post/toc.html" . }}
+            {{ (.Content) }}
             {{ partial "post/gallery.html" . }}
           </div>
+          <!-- <div class = "toc-wrapper">
+            {{ partial "post/toc.html" . }}
+          </div> -->
         </div>
         <div id="copyright" class='copyright'>
           {{ partial "post/copyright.html" . }}
@@ -67,6 +71,9 @@
           {{ end }}
         </div>
       </article>
+      <!-- <div class="toc">
+        
+        </div> -->
       {{ partial "footer.html" . }}
     </div>
     <div id="bottom-bar" class="post-bottom-bar" data-behavior="{{ .Scratch.Get "sidebarBehavior" }}">
